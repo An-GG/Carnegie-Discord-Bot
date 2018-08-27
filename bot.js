@@ -159,7 +159,7 @@ ontime({
         for (var k in channels) {
           let channel = channels[k][1];
           console.log(channel.name);
-          if (channel.name == "announ") {
+          if (channel.name == "announcements") {
 
             // Get current date
             var date = new Date();
