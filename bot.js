@@ -618,7 +618,8 @@ bot.on("message", async message => {
   }
 
   // Homework Protocol
-  if (currentMessage.startsWith("hw") || currentMessage.startsWith(" hw") || currentMessage.startsWith("homework") || currentMessage.startsWith(" homework")) {
+  // LIKELY CAUSING CURRENT CRASHES
+  /*if (currentMessage.startsWith("hw") || currentMessage.startsWith(" hw") || currentMessage.startsWith("homework") || currentMessage.startsWith(" homework")) {
     let channel = message.channel;
     globalchannel = channel;
 
@@ -640,7 +641,7 @@ bot.on("message", async message => {
 
 
     return;
-  }
+  }*/
 
   // Delete
   var verified = false;
