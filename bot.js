@@ -694,20 +694,7 @@ bot.on("message", async message => {
   return;
 })
 
-bot.on("guildMemberAdd", async member => {
-  if (member.user.bot) return;
-  let channels = await message.guild.channels;
-  let chArr = Array.from(channels)
 
-  for (var k in chArr) {
-    let channel = chArr[k][1];
-    if (channel.name == "visitors") {
-      let visitorsChannel = channel;
-      let authorID = member.user.id.toString();
-      visitorsChannel.send("<@" + authorID + "> " + botsettings.welcomeMessage);
-    }
-  }
-});
 
 bot.login(botsettings.token);
 
